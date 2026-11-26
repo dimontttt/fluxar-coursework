@@ -1,5 +1,27 @@
-# Vue 3 + Vite
+# FLUXAR — Вебзастосунок для підбору та замовлення світлодіодних систем автономного освітлення
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Курсова робота з дисципліни **«Веб-дизайн та веб-програмування»** (КНУ імені Тараса Шевченка, Факультет інформаційних технологій).
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Основні можливості
+
+- **Головна сторінка (`/`)**: презентація бренду FLUXAR, філософія та популярні світлодіодні комплекти.
+- **Каталог товарів (`/catalog`)**: асинхронне завантаження 20 моделей LED-стрічок, пошук за кольором світіння, фільтрація за робочою напругою (`5V`, `9V`, `12V`, `24V`), сортування за ціною, індикація станів завантаження (`Loading`), порожнього результату (`Empty`) та помилки (`Error`).
+- **Детальна сторінка товару (`/product/:id`)**: повні технічні характеристики (напруга, довжина, потужність, тип тригера/роз'єму, ступінь захисту IP) та додавання до кошика.
+- **Індивідуальне замовлення та кошик (`/custom-order`)**: форма конфігуратора збірки під особливі потреби з валідацією полів, авторозрахунком орієнтовної вартості та керуванням кошиком із локальним збереженням у `localStorage`.
+
+## Використані технології
+
+- HTML5, SCSS (змінні, вкладеність, адаптивна сітка)
+- JavaScript (ES6+)
+- Vue 3 (Composition API)
+- Vite
+- Vue Router
+- Pinia + `localStorage`
+
+## Встановлення та локальний запуск
+
+1. Клонувати репозиторій:
+   ```bash
+   git clone [https://github.com/dimontttt/fluxar-coursework.git](https://github.com/dimontttt/fluxar-coursework.git)
+   cd fluxar-coursework
+   ```
